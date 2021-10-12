@@ -1,0 +1,29 @@
+{
+  "name": "andreidecuseara/tallstack",
+  "description": "Full install of tallstack",
+  "homepage": "https://github.com/AndreiDecuseara/tallstack.git",
+  "license": "MIT",
+  "authors": [
+    {
+        "name": "Andrei Decuseara",
+        "email": "adecuseara@gmail.com"
+    }
+],
+
+  "require": {
+    "php": "^7.3|^8.0",
+    "laravel/framework": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+        "TallStackPackage\\TallStack\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "TallStackPackage\\TallStack\\TallStackServiceProvider"
+        ]
+    }
+  }
+}
