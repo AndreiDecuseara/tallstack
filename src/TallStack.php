@@ -51,6 +51,18 @@ class TallStack extends Preset
         static::copyFile('js/custom.js',  resource_path('js'),'custom.js');
 
         static::copyFile('config/webpack.mix.js', '.' ,'webpack.mix.js');
+
+        static::copyFile('Livewire/Home.php', app_path('Http/Livewire'),'Home.php');
+        static::copyFile('Livewire/Layouts/Navbar.php', app_path('Http/Livewire/Layouts'),'Navbar.php');
+        static::copyFile('Livewire/Layouts/Footer.php', app_path('Http/Livewire/Layouts'),'Footer.php');
+
+        static::copyFile('views/layouts/app.blade.php', resource_path('views/layouts'),'app.blade.php');
+        static::copyFile('views/livewire/home.blade.php', resource_path('views/livewire'),'home.blade.php');
+        static::copyFile('views/livewire/layouts/navbar.blade.php', resource_path('views/livewire/layouts'),'navbar.blade.php');
+        static::copyFile('views/livewire/layouts/footer.blade.php', resource_path('views/livewire/layouts'),'footer.blade.php');
+        
+        static::copyFile('config/web.php', './routes' ,'web.php');
+        
     }
 
         /**
