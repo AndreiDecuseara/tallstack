@@ -1,12 +1,8 @@
 # Full install tallstack
 
-Laravel Livewire
-See the docs for everything: https://laravel-livewire.com/docs/quickstart
-
-Awesome Livewire stuff here: https://github.com/imliam/awesome-livewire
-
-All contributions are welcomed! (but please start a discussion to make sure the PR is warranted first)
-
-Ideas, questions and bugs belong in Discussions or Discord server.
-
-Contribute to the docs here: https://github.com/livewire/docs
+1. Setup and create new project
+2. Install Tallstack (Laravel, Tailwind, AlpineJs, Livewire) and jQuery
+3. Create optimisation and install webmix, run all npm commands
+4. Create optimised layout ready to be used in a new tallstack application
+5. Create example of livewire use instead laravel
+6. Create new page start tallstack with all resources required
