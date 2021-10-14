@@ -49,6 +49,8 @@ class TallStack extends Preset
 
         static::copyFile('js/app.js', resource_path('js'), 'app.js');
         static::copyFile('js/custom.js',  resource_path('js'),'custom.js');
+        
+        static::copyFile('config/tailwind.config.js', '.' ,'tailwind.config.js');
 
         static::copyFile('config/webpack.mix.js', '.' ,'webpack.mix.js');
 
