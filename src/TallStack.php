@@ -45,7 +45,12 @@ class TallStack extends Preset
 
         // Copy css
         static::copyFile('css/app.css', resource_path('css'), 'app.css');
-        static::copyFile('css/app.css',  resource_path('css'),'custom');
+        static::copyFile('css/custom.css',  resource_path('css'),'custom.css');
+
+        static::copyFile('js/app.js', resource_path('js'), 'app.js');
+        static::copyFile('js/custom.js',  resource_path('js'),'custom.js');
+
+        static::copyFile('config/webpack.mix.js', '.' ,'webpack.mix.js');
     }
 
         /**
