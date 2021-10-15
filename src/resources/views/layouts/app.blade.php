@@ -18,7 +18,7 @@
 </head>
 
 <body class="font-poppins">
-    <div class="relative mx-auto 2xl:container">
+    <div class="relative mx-auto">
         @livewire('layouts.navbar')
         {{ $slot }}
     </div>

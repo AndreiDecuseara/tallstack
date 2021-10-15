@@ -5,4 +5,4 @@
 3. Create optimisation and install webmix, run all npm commands
 4. Create optimised layout ready to be used in a new tallstack application
 5. Create example of livewire use instead laravel
-6. Create new page start tallstack with all resources required
+6. Create new start page tallstack with all resources required
