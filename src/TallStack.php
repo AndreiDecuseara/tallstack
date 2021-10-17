@@ -49,10 +49,6 @@ class TallStack extends Preset
 
         static::copyFile('js/app.js', resource_path('js'), 'app.js');
         static::copyFile('js/custom.js',  resource_path('js'),'custom.js');
-        
-        static::copyFile('config/tailwind.config.js', '.' ,'tailwind.config.js');
-
-        static::copyFile('config/webpack.mix.js', '.' ,'webpack.mix.js');
 
         // just demo page
         static::copyFile('config/particles.json', public_path('assets') ,'particles.json');
@@ -66,7 +62,12 @@ class TallStack extends Preset
         static::copyFile('views/livewire/layouts/navbar.blade.php', resource_path('views/livewire/layouts'),'navbar.blade.php');
         static::copyFile('views/livewire/layouts/footer.blade.php', resource_path('views/livewire/layouts'),'footer.blade.php');
         
-        static::copyFile('config/web.php', './routes' ,'web.php');
+        // Add routes
+        file_put_contents(
+            './routes/web.php',
+            "use App\Http\Livewire\Home;\nRoute::get('/', Home::class); \n\n",
+            FILE_APPEND
+        );
         
     }
 

@@ -6,3 +6,5 @@
 4. Create optimised layout ready to be used in a new tallstack application
 5. Create example of livewire use instead laravel
 6. Create new start page tallstack with all resources required
+7. Use your last version of node, changed automated from script
+8. Auto open chrome on your new tallstack project when is ready
