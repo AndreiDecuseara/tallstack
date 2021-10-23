@@ -18,7 +18,13 @@ class TallStackServiceProvider extends ServiceProvider
         UiCommand::macro('tallstack', function ($command) {
             TallStack::install();
             
-            $command->info('Project setup with tallstack completed! Enjoy!');
+            $command->info('Tallstack preset scaffolding installed successfully.');
+
+            if ($command->option('auth')) {
+                TallStack::installAuth();
+
+                $command->info('Auth scaffolding installed successfully.');
+            }
         });
     }
 
