@@ -1,24 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [
+  content: [
     './app/**/*.php',
-    './resources/**/*.blade.php',
-    './resources/**/*.js',
-    './resources/**/*.html',
-    './resources/**/*.js',
-    './resources/**/*.jsx',
-    './resources/**/*.ts',
-    './resources/**/*.tsx',
-    './resources/**/*.php',
-    './resources/**/*.vue',
-    './resources/**/*.twig',
+    './resources/**/*.{html,blade.php,js,jsx,ts,tsx,php,vue,twig}',
+    './public/index.html',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [],
